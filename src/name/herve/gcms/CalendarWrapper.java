@@ -117,7 +117,7 @@ public class CalendarWrapper {
 		if (feed.getItems() != null) {
 			for (CalendarListEntry entry : feed.getItems()) {
 				String ar = entry.getAccessRole();
-				if (ar.equals("owner") || ar.equals("writer")) {
+				if ((AccessList.Role.owner.toString().equals(ar)) || (AccessList.Role.writer.toString().equals(ar))) {
 					Map<String, String> nc = new HashMap<String, String>();
 					nc.put("id", entry.getId());
 					nc.put("summary", entry.getSummary());

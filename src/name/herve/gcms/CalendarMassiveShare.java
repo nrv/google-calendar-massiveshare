@@ -31,7 +31,7 @@ public class CalendarMassiveShare {
 			calendar.init();
 
 			for (Map<String, String> c : calendar.getCalendars()) {
-				System.out.println("Calendrier : " + c.get("id") + " / " + c.get("summary") + " / " + c.get("description"));
+				System.out.println("Calendar : " + c.get("id") + " / " + c.get("summary") + " / " + c.get("description"));
 			}
 			
 			String cal = "ENTER YOUR CALENDAR ID HERE";
